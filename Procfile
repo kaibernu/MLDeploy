@@ -1,1 +1,1 @@
-web: gunicorn Basic_API:app
+web: gunicorn Basic_API:app && run form.html
