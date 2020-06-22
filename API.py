@@ -8,27 +8,12 @@ def home():
     return "Bem-Vindo"
 
 
-@app.route('/add')
+@app.route('/calculo')
 def add():
     a = 10
-    b = 90
+    b = 10
 
     return str(a+b)
-
-@app.route('/addParam',methods=['GET'])
-def add_param():
-    a = request.args.get("a")
-    b = request.args.get("b")
-
-    return str(int(a)+int(b))
-
-
-@app.route('/addParamPost',methods=['POST'])
-def add_param_post():
-    a = request.form["a"]
-    b = request.form["b"]
-
-    return str(int(a)+int(b))
 
 
 
